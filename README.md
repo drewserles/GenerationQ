@@ -25,11 +25,11 @@ The model is built with the [OpenNMT](http://opennmt.net) framework.
 Training hyperparamters can be modified by changing the contents of train.sh. With a batch size of 64, 1 epoch is about 1100 training steps.  
 Trained models are saved in the "trained" folder. To get the best results in testing, use the iteration that achieve the lowest perplexity.
 
-## Test
+## Evaluate
 Modify the "-model trained/lowest_ppl_model.pt" line in test.sh to point to the trained model with the lowest perplexity.
     
     sh test.sh
 Generated questions and their perplexity scores are saved in pred.txt.
 
-## Forward Pass
+## Generate Questions
 Run test.sh with the "-src" argument pointing to whatever text file you want to generate questions from. It must be tokenized with one sentence per line.
