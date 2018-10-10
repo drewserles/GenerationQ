@@ -5,7 +5,11 @@ The core question generation model is a Python implementation of the paper [Lear
 
 The model is built with the [OpenNMT](http://opennmt.net) framework.
 
-# Train a Model
+# Create a Model
+
+## Requirements
+[OpenNMT](https://github.com/OpenNMT/OpenNMT-py)  
+[Spacy and English model](https://spacy.io/usage/)
 
 ## Preprocess
 <ol>
@@ -18,7 +22,7 @@ The model is built with the [OpenNMT](http://opennmt.net) framework.
 ## Train
 
     sh train.sh
-Training hyperparamters can be modified by changing the contents of train.sh. With a batch size of 64, 1 epoch is about 1100 training steps.
+Training hyperparamters can be modified by changing the contents of train.sh. With a batch size of 64, 1 epoch is about 1100 training steps.  
 Trained models are saved in the "trained" folder. To get the best results in testing, use the iteration that achieve the lowest perplexity.
 
 ## Test
