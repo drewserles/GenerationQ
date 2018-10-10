@@ -1,7 +1,7 @@
 python train.py \
 -seed 3435 \
 -data data/preproc \
--save_model model/600rnn \
+-save_model trained/600rnn \
 -pre_word_vecs_enc data/embeddings.enc.pt \
 -pre_word_vecs_dec data/embeddings.dec.pt \
 -fix_word_vecs_enc \

@@ -108,8 +108,8 @@ def build_save_in_shards(src_corpus, tgt_corpus, fields,
         # We save fields in vocab.pt separately, so make it empty.
         dataset.fields = []
 
-        pt_file = "{:s}.{:s}.{:d}.pt".format(
-            opt.save_data, corpus_type, index)
+        pt_file = "{:s}.{:s}.pt".format(
+            opt.save_data, corpus_type)
         logger.info(" * saving %s data shard to %s."
                     % (corpus_type, pt_file))
         torch.save(dataset, pt_file)
