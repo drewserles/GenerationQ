@@ -1,0 +1,20 @@
+python train.py \
+-seed 3435 \
+-data data/preproc \
+-save_model model/600rnn \
+-pre_word_vecs_enc data/embeddings.enc.pt \
+-pre_word_vecs_dec data/embeddings.dec.pt \
+-fix_word_vecs_enc \
+-fix_word_vecs_dec \
+-word_vec_size 300 \
+-batch_size 64 \
+-train_steps 16000 \
+-encoder_type brnn \
+-dropout 0.3 \
+-optim sgd \
+-learning_rate 1 \
+-start_decay_steps 10000 \
+-decay_steps 1100 \
+-layers 2 \
+-rnn_size 600 \
+-gpu_ranks 0
