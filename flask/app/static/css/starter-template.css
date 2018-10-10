@@ -1,0 +1,84 @@
+
+
+.starter-template {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.form-template {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#larger {
+    font-size: 60px;
+}
+
+div p {
+    font-size:20px;
+}
+
+.trialbutton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    border-radius: 8px;
+}
+
+/* LINK FORMATTING */
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: blue;
+}
+
+/* mouse over link */
+a:hover {
+    color: #4CAF50;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+/* COLUMNS */
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
+
+.column50 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.banner {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background: #4CAF50;
+}

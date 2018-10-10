@@ -1,0 +1,40 @@
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<style>
+
+  
+</style>
+
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="starter-template">
+            <h2>Paste your text to generate some questions</h2>
+        </div>
+        <div>
+        <form style="" method="post" class="form-template">
+            {{ form.hidden_tag() }}       
+            <p class="">
+                {{ form.area_text(rows='10',cols='80') }}
+            </p>
+        
+            
+                {{ form.submit(class="trialbutton") }}
+            
+        </form>
+        </div>
+    </div>
+    
+        
+   <!-- Output box -->
+   <div class="">
+     <div class="starter-template">
+       <h3>{{results}}</h3>
+        {% for item in data %}
+          <p> {{ item }} </p>
+        {% endfor %}
+     </div>
+   </div><!-- /output box -->
+
+{% endblock %}

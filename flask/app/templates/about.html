@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div>
+    <!-- ABOUT GENERATION Q SECTION -->
+    <div class="container">
+      <div class="starter-template">
+        <h2 class="banner">About Generation Q</h2>
+      </div>
+    </div>
+    
+    <section id="aboutgenq">
+      <div class="row">
+        <div class="column"></div>
+        <div class="column50">
+          <p>This is a tool to help teachers come up with reading comprehension questions by automatically generating questions from text.</p>
+          <p>Questions are generated from input sentences using sequence-to-sequence learning. The model is a Python implementation of the one described
+          in the paper <a href="https://arxiv.org/abs/1705.00106">Learning to Ask: Neural Question Generation for Reading Comprehension</a>, and is built
+          on the wonderful open-source neural machine translation framework <a href="http://opennmt.net/">OpenNMT</a>.</p>
+          <p>The model is trained with question-answer pairs from the <a href="https://rajpurkar.github.io/SQuAD-explorer/">SQuAD</a> dataset. This web app is built in
+          Python with Flask and hosted on AWS.</p>
+        </div>
+        <div class="column"></div>
+      </div>
+    </section>
+    <br></br>
+    <!-- ABOUT ME SECTION -->
+    <div class="container">
+      <div class="starter-template">
+        <h2 class="banner">About Me</h2>
+      </div>
+    </div>
+    
+    <section id="aboutme">
+    <div class="row">
+      <div class="column"></div>
+      <div class="column50">
+            <p>My name is Drew Serles and I am currently a fellow with Insight Artificial Intelligence. I joined Insight to speed up my transition into machine learning.
+            My background is in software and mechanical engineering in the automation industry. I'm excited about applying cutting edge techniques to solve challenging
+            real-world problems.</p>
+      </div>
+      <div class="column"></div>
+    </div>
+    
+    <div class="row">
+      <div class="column"></div>
+          <div class="column" style="">
+            <a href="https://github.com/drewserles">
+                <img src="../static/images/git.png" alt="Github icon" style="width:75px;height:75px;"></img>
+            </a>
+                <p><a href="https://github.com/drewserles">GitHub</a></p>
+          </div>
+          <div class="column" style="">
+                <a href="https://www.linkedin.com/in/drewserles/">
+                    <img src="../static/images/linkedin.png" alt="Linkedin icon" style="width:75px;height:75px;"></img>
+                </a>
+            
+                <p><a href="https://www.linkedin.com/in/drewserles/">LinkedIn</a></p>
+          </div>
+      <div class="column"></div>
+    </div>
+    </section>    
+  </div>
+        
+{% endblock %}
